@@ -9,6 +9,7 @@ img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur));
+  margin-bottom: 2rem;
 }
 
 .hl {
@@ -25,7 +26,11 @@ body {
 }
 
 .controls {
-  margin-bottom: 50px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 input[type="color"] {
