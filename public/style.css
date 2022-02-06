@@ -17,6 +17,7 @@ img {
 }
 
 body {
+  margin-top: 2rem;
   text-align: center;
   background: #193549;
   color: white;
