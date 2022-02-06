@@ -1,16 +1,17 @@
 // have to use <ES6 with this.
 function handleUpdate() {
-  console.log(this.value);
+  //data takes everything with data and put it in an object
+  const suffix = this.dataset.sizing || "";
+  console.log(this.name); // px or sizing
+  document.documentElement.style.setProperty(
+    `--${this.name}`,
+    this.value + suffix
+  );
 }
-
-// const handleUpdate = () => {
-//   console.log(this.value);
-// };
 
 window.addEventListener("load", () => {
   // inputs is a NodeList (not an array)
   const inputs = document.querySelectorAll(".controls input");
-  // console.log(inputs);
 
   inputs.forEach((input) => input.addEventListener("change", handleUpdate));
   inputs.forEach((input) => input.addEventListener("mousemove", handleUpdate));
