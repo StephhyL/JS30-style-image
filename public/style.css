@@ -1,3 +1,15 @@
+/* defining variables */
+* {
+  --base: #ffc660;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+}
+
 body {
   text-align: center;
   background: #193549;
