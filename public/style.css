@@ -11,6 +11,22 @@ body {
   margin-bottom: 50px;
 }
 
-input {
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
   width: 100px;
+  height: 55px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+/*for the inner "circle" */
+input[type="color"]::-webkit-color-swatch {
+  border: 3px solid white;
+  border-radius: 100px;
 }
