@@ -1,4 +1,23 @@
+/* defining variables */
+:root {
+  --base: #ffc660;
+  --spacing: 10px;
+  --blur: 0px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  margin-bottom: 2rem;
+}
+
+.hl {
+  color: var(--base);
+}
+
 body {
+  margin-top: 2rem;
   text-align: center;
   background: #193549;
   color: white;
@@ -8,7 +27,11 @@ body {
 }
 
 .controls {
-  margin-bottom: 50px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 input[type="color"] {
