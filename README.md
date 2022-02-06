@@ -10,7 +10,7 @@ Link: https://js30-style-image.herokuapp.com/
 
 ## Final Product Preview
 
-![home-page]()
+![home-page](https://github.com/StephhyL/JS30-style-image/blob/main/public/docs/home.png)
 
 ### Concepts I've Learned/Re-learned From this Challenge:
 
